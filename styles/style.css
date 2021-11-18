@@ -1,0 +1,221 @@
+   
+    body {
+            font-family: 'Monoton', cursive;
+            background-image: url(../images/cogus001.webp);
+            background-color: rgb(30, 16, 92);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            //display: grid;
+            //align-items: center;
+            //justify-items: center;
+            width: 100vw;
+            height: 100%;
+        }
+        
+        section{
+            
+            margin-bottom: -4em;
+         
+        }
+        .hexgap{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5em;
+            width: 100vw;
+            height: 100%;
+        }
+        @media (max-width:40em) {
+            .hexgap{
+            display: grid;
+            align-items: center;
+            justify-content: center;}
+        }
+    
+    .hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  margin: 86.60px 0;
+  background-image: url(http://csshexagon.com/img/meow.jpg);
+  background-size: auto 346.4102px;
+  background-position: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.666);
+}
+.um {
+    background-image: url(../images/casa001.webp);
+}
+.dois {
+    background-image: url(../images/casa003.webp);
+}
+.tres {
+    background-image: url(../images/quiosq002.webp);
+}
+.quatro {
+    background-image: url(../images/casa301.webp);
+}
+.cinco {
+    background-image: url(../images/ufo001.webp);
+}
+.seis {
+    background-image: url(../images/astral001.webp);
+}
+.sete {
+    background-image: url(../images/espada003.webp);
+}
+
+.hexTop,
+.hexBottom {
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  overflow: hidden;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background: inherit;
+  left: 43.93px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.666);
+}
+
+/*counter transform the bg image on the caps, thanks to Brenna from github*/
+.hexTop:after,
+.hexBottom:after {
+  content: "";
+  position: absolute;
+  width: 300.0000px;
+  height: 173.20508075688775px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: inherit;
+}
+
+.hexTop {
+  top: -106.0660px;
+}
+
+.hexTop:after {
+  background-position: center top;
+}
+
+.hexBottom {
+  bottom: -106.0660px;
+}
+
+.hexBottom:after {
+  background-position: center bottom;
+}
+
+.hexagon:after {
+  content: "";
+  position: absolute;
+  top: 0.0000px;
+  left: 0;
+  width: 300.0000px;
+  height: 173.2051px;
+  z-index: 2;
+  background: inherit;
+}
+.hexagon:hover .hexBottom,.hexagon:hover .hexTop, .hexagon:hover{
+    box-shadow: 1px 1px 2px darkorange, 0 0 1em darkorange, 0 0 0.2em darkorange; 
+}
+
+
+.topo{
+    display: grid;
+    justify-items: center;
+    margin-bottom: 35vh;
+    
+}
+.title{
+    font-size: 5em;
+    color: darkorange;
+    text-shadow: 1px 1px 2px darkorange, 0 0 1em darkorange, 0 0 0.2em darkorange;
+    }
+.title:hover{
+    text-shadow: 1px 1px 2px darkorange, 0 0 1em rgb(243, 194, 135), 0 0 0.2em darkorange;
+}
+.subtitle{
+    font-family: fantasy;
+    font-size: 1.5em;
+    color: rgb(245, 194, 132);
+    margin-top: -1em;
+    
+}
+
+
+.header{
+    width:100%;
+    height:1em;
+    margin-bottom: 20em;
+    position:sticky;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: flex;
+    justify-content: center;
+}
+.linked{
+    font-family: Arial;
+    font-weight: 100;
+    text-decoration: none;
+    color:white;
+    font-size: .8em;
+    margin-right: 4em;
+}
+.linked:hover{
+    color:darkorange;
+}
+.texfot{
+    margin-top: 15vh;
+    font-family: Arial;
+    font-weight: 100;
+    color:white;
+    font-size: .8em;
+    width:100%;
+    height:1em;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+.lightbox {
+    /* Default to hidden */
+    display: none;
+  
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  
+    /* A bit of padding around image */
+    padding: 1em;
+  
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Unhide the lightbox when it's the target */
+  .lightbox:target {
+    display: block;
+  }
+  
+  .lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
