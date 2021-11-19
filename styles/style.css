@@ -56,6 +56,27 @@
 .sete {
     background-image: url(../images/espada003.webp);
 }
+.oito {
+  background-image: url(../images/casa201.webp);
+}
+.nove {
+  background-image: url(../images/quiosq001.webp);
+}
+.dez {
+  background-image: url(../images/casa401.webp);
+}
+.onze {
+  background-image: url(../images/casa402.webp);
+}
+.doze {
+  background-image: url(../images/sand001.webp);
+}
+.trese {
+  background-image: url(../images/palco001.webp);
+}
+.quatorz {
+  background-image: url(../images/copo001.webp);
+}
 
 .hexTop,
 .hexBottom {
